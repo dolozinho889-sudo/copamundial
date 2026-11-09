@@ -1,0 +1,238 @@
+# arquivo: historia.html
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>História das Copas</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+color:white;
+background-size:cover;
+background-position:center;
+animation:fundo 12s infinite;
+}
+
+@keyframes fundo{
+0%{background-image:linear-gradient(rgba(0,40,0,.6),rgba(0,0,90,.6)),url('img/imagem1.jpg');}
+33%{background-image:linear-gradient(rgba(0,40,0,.6),rgba(0,0,90,.6)),url('img/imagem2.avif');}
+66%{background-image:linear-gradient(rgba(0,40,0,.6),rgba(0,0,90,.6)),url('img/imagem3.png');}
+100%{background-image:linear-gradient(rgba(0,40,0,.6),rgba(0,0,90,.6)),url('img/imagem4.jpg');}
+}
+
+header{
+text-align:center;
+padding:40px 20px;
+}
+
+h1{
+font-size:55px;
+text-shadow:0 0 20px yellow;
+}
+
+.sub{
+font-size:22px;
+color:#ffe95e;
+margin-top:10px;
+}
+
+.menu{
+text-align:center;
+margin-bottom:30px;
+}
+
+button{
+background:linear-gradient(45deg,green,gold,blue);
+border:none;
+padding:18px 30px;
+font-size:22px;
+color:white;
+border-radius:25px;
+cursor:pointer;
+font-weight:bold;
+box-shadow:0 0 20px gold;
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px cyan;
+}
+
+.timeline{
+width:85%;
+margin:auto;
+padding-bottom:50px;
+}
+
+.card{
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(8px);
+border-radius:25px;
+padding:25px;
+margin:25px 0;
+box-shadow:0 0 20px rgba(255,255,0,.35);
+}
+
+h2{
+color:#ffe95e;
+margin-bottom:15px;
+}
+
+p{
+font-size:21px;
+line-height:1.8;
+}
+
+.destaque{
+color:#7fffd4;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🏆 História das Copas do Mundo</h1>
+<p class="sub">País sede, campeão, vice e artilheiro em ordem cronológica</p>
+</header>
+
+<div class="menu">
+<a href="index.html">
+<button>⬅ Voltar</button>
+</a>
+</div>
+
+<div class="timeline">
+
+<div class="card">
+<h2>1930 — Uruguai</h2>
+<p><span class="destaque">Campeão:</span> Uruguai<br>
+<span class="destaque">Vice:</span> Argentina<br>
+<span class="destaque">Artilheiro:</span> Guillermo Stábile (8)</p>
+</div>
+
+<div class="card">
+<h2>1934 — Itália</h2>
+<p>Campeão: Itália<br>Vice: Tchecoslováquia<br>Artilheiro: Oldřich Nejedlý (5)</p>
+</div>
+
+<div class="card">
+<h2>1938 — França</h2>
+<p>Campeão: Itália<br>Vice: Hungria<br>Artilheiro: Leônidas (7)</p>
+</div>
+
+<div class="card">
+<h2>1950 — Brasil</h2>
+<p>Campeão: Uruguai<br>Vice: Brasil<br>Artilheiro: Ademir (9)</p>
+</div>
+
+<div class="card">
+<h2>1954 — Suíça</h2>
+<p>Campeão: Alemanha Ocidental<br>Vice: Hungria<br>Artilheiro: Kocsis (11)</p>
+</div>
+
+<div class="card">
+<h2>1958 — Suécia</h2>
+<p>Campeão: Brasil<br>Vice: Suécia<br>Artilheiro: Just Fontaine (13)</p>
+</div>
+
+<div class="card">
+<h2>1962 — Chile</h2>
+<p>Campeão: Brasil<br>Vice: Tchecoslováquia<br>Artilheiros: Garrincha, Vavá e outros (4)</p>
+</div>
+
+<div class="card">
+<h2>1966 — Inglaterra</h2>
+<p>Campeão: Inglaterra<br>Vice: Alemanha Ocidental<br>Artilheiro: Eusébio (9)</p>
+</div>
+
+<div class="card">
+<h2>1970 — México</h2>
+<p>Campeão: Brasil<br>Vice: Itália<br>Artilheiro: Gerd Müller (10)</p>
+</div>
+
+<div class="card">
+<h2>1974 — Alemanha Ocidental</h2>
+<p>Campeão: Alemanha Ocidental<br>Vice: Holanda<br>Artilheiro: Lato (7)</p>
+</div>
+
+<div class="card">
+<h2>1978 — Argentina</h2>
+<p>Campeão: Argentina<br>Vice: Holanda<br>Artilheiro: Kempes (6)</p>
+</div>
+
+<div class="card">
+<h2>1982 — Espanha</h2>
+<p>Campeão: Itália<br>Vice: Alemanha Ocidental<br>Artilheiro: Paolo Rossi (6)</p>
+</div>
+
+<div class="card">
+<h2>1986 — México</h2>
+<p>Campeão: Argentina<br>Vice: Alemanha Ocidental<br>Artilheiro: Lineker (6)</p>
+</div>
+
+<div class="card">
+<h2>1990 — Itália</h2>
+<p>Campeão: Alemanha Ocidental<br>Vice: Argentina<br>Artilheiro: Schillaci (6)</p>
+</div>
+
+<div class="card">
+<h2>1994 — Estados Unidos</h2>
+<p>Campeão: Brasil<br>Vice: Itália<br>Artilheiro: Stoichkov e Salenko (6)</p>
+</div>
+
+<div class="card">
+<h2>1998 — França</h2>
+<p>Campeão: França<br>Vice: Brasil<br>Artilheiro: Davor Šuker (6)</p>
+</div>
+
+<div class="card">
+<h2>2002 — Coreia do Sul/Japão</h2>
+<p>Campeão: Brasil<br>Vice: Alemanha<br>Artilheiro: Ronaldo (8)</p>
+</div>
+
+<div class="card">
+<h2>2006 — Alemanha</h2>
+<p>Campeão: Itália<br>Vice: França<br>Artilheiro: Klose (5)</p>
+</div>
+
+<div class="card">
+<h2>2010 — África do Sul</h2>
+<p>Campeão: Espanha<br>Vice: Holanda<br>Artilheiros: vários com 5 gols</p>
+</div>
+
+<div class="card">
+<h2>2014 — Brasil</h2>
+<p>Campeão: Alemanha<br>Vice: Argentina<br>Artilheiro: James Rodríguez (6)</p>
+</div>
+
+<div class="card">
+<h2>2018 — Rússia</h2>
+<p>Campeão: França<br>Vice: Croácia<br>Artilheiro: Harry Kane (6)</p>
+</div>
+
+<div class="card">
+<h2>2022 — Catar</h2>
+<p>Campeão: Argentina<br>Vice: França<br>Artilheiro: Mbappé (8)</p>
+</div>
+
+<div class="card">
+<h2>2026 — Estados Unidos, Canadá e México</h2>
+<p>Primeira Copa com 48 seleções.</p>
+</div>
+
+</div>
+
+</body>
+</html>
+```

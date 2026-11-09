@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copa do Mundo 2026</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Arial',sans-serif;
+}
+
+body{
+background:
+linear-gradient(rgba(0,50,0,.7),rgba(0,0,80,.7)),
+url("img/imagem1.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+overflow-x:hidden;
+}
+
+/* Partículas */
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+/* Cabeçalho */
+header{
+text-align:center;
+padding:50px 20px;
+}
+
+header h1{
+font-size:70px;
+color:#fff;
+text-shadow:
+0 0 10px yellow,
+0 0 20px gold,
+0 0 40px lime;
+animation:pulsar 2s infinite alternate;
+}
+
+header p{
+font-size:24px;
+margin-top:15px;
+color:#ffe95e;
+}
+
+/* Menu */
+.menu{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding:40px;
+}
+
+.menu a{
+text-decoration:none;
+}
+
+.menu button{
+padding:20px 35px;
+font-size:22px;
+font-weight:bold;
+color:white;
+border:none;
+border-radius:50px;
+cursor:pointer;
+
+background:linear-gradient(
+45deg,
+#009c3b,
+#ffdf00,
+#009c3b
+);
+
+background-size:300% 300%;
+
+box-shadow:
+0 0 10px #00ff88,
+0 0 20px #ffdf00;
+
+transition:.4s;
+animation:gradiente 4s infinite;
+}
+
+.menu button:hover{
+transform:translateY(-8px) scale(1.08);
+box-shadow:
+0 0 20px #00ff88,
+0 0 40px #ffdf00,
+0 0 60px #00ff88;
+}
+
+/* Cards */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:40px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.2);
+padding:30px;
+border-radius:20px;
+transition:.5s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:
+0 0 20px lime,
+0 0 40px yellow;
+}
+
+.card h2{
+color:#ffdf00;
+margin-bottom:15px;
+}
+
+.card p{
+color:white;
+line-height:1.6;
+}
+
+/* Introdução */
+.introducao{
+max-width:1000px;
+margin:40px auto;
+padding:35px;
+background:rgba(0,0,0,.35);
+border-radius:20px;
+backdrop-filter:blur(6px);
+}
+
+.introducao h2{
+text-align:center;
+margin-bottom:20px;
+font-size:40px;
+color:#ffdf00;
+text-shadow:0 0 15px gold;
+}
+
+.introducao p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:15px;
+}
+
+/* Rodapé */
+footer{
+margin-top:60px;
+padding:30px;
+text-align:center;
+background:rgba(0,0,0,.5);
+}
+
+/* Animações */
+
+@keyframes pulsar{
+from{
+transform:scale(1);
+}
+to{
+transform:scale(1.05);
+}
+}
+
+@keyframes gradiente{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+}
+
+
+.introducao p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:15px;
+transition:.4s;
+cursor:default;
+}
+
+.introducao p:hover{
+transform:scale(1.03);
+color:#ffe95e;
+text-shadow:
+0 0 10px yellow,
+0 0 20px gold,
+0 0 35px #ffdf00;
+}
+
+/* Rodapé */
+
+footer{
+margin-top:60px;
+padding:30px;
+text-align:center;
+background:rgba(0,0,0,.5);
+font-size:22px;
+font-weight:bold;
+color:white;
+transition:.4s;
+}
+
+footer:hover{
+text-shadow:
+0 0 10px yellow,
+0 0 20px gold,
+0 0 40px lime;
+transform:scale(1.03);
+}
+
+</style>
+</head>
+
+<body>
+
+<canvas id="particulas"></canvas>
+
+<header>
+<h1>⚽ COPA DO MUNDO 2026</h1>
+<p>Estados Unidos • Canadá • México</p>
+</header>
+
+<div class="menu">
+
+<a href="historia.html">
+<button>🏆 História</button>
+</a>
+
+<a href="paises.html">
+<button>🌎 Países</button>
+</a>
+
+<a href="jogadores.html">
+<button>⭐ Jogadores</button>
+</a>
+
+<a href="tabela.html">
+<button>📊 Tabela</button>
+</a>
+
+</div>
+
+<section class="introducao">
+<h2>Copa do Mundo de 2026 - A Maior Competição do Mundo</h2>
+
+<p>
+
+A Copa do Mundo é o maior torneio de futebol do planeta e reúne as melhores seleções nacionais em uma competição que desperta a paixão de milhões de torcedores. Criada em 1930 pela FIFA, a competição se tornou um dos eventos esportivos mais importantes e assistidos do mundo, proporcionando momentos históricos, grandes conquistas e emoções inesquecíveis.
+
+A edição de 2026 será especialmente marcante, pois será a primeira Copa do Mundo realizada em três países ao mesmo tempo: Estados Unidos, Canadá e México. Além disso, o torneio contará pela primeira vez com 48 seleções participantes, ampliando as oportunidades para países de diferentes continentes mostrarem seu talento nos gramados.
+
+A expectativa para a Copa do Mundo de 2026 é enorme. Torcedores aguardam grandes confrontos, novas estrelas do futebol mundial e a possibilidade de presenciar momentos que entrarão para a história do esporte. Seleções tradicionais buscarão reafirmar sua força, enquanto equipes emergentes tentarão surpreender e conquistar espaço entre as melhores do mundo.
+
+Mais do que uma competição, a Copa do Mundo é uma celebração da união entre povos, culturas e nações, mostrando como o futebol tem o poder de conectar pessoas em todos os cantos do planeta. A edição de 2026 promete ser um espetáculo inesquecível, repleto de emoção, rivalidade e paixão pelo esporte mais popular do mundo.
+
+Em 2026, o torneio será sediado por três países:
+Estados Unidos, Canadá e México, marcando uma nova era para o futebol.
+</p>
+
+
+</section>
+<footer>
+⚽ Copa do Mundo 2026 - Feito por Julia e Noemy 💚💛
+</footer>
+```
+
+
+<script>
+
+/* Partículas Futurísticas */
+
+const canvas=document.getElementById("particulas");
+const ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let particles=[];
+
+for(let i=0;i<120;i++){
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*3+1,
+dx:(Math.random()-0.5),
+dy:(Math.random()-0.5)
+});
+}
+
+function animate(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+particles.forEach(p=>{
+
+ctx.beginPath();
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+ctx.fillStyle="rgba(255,223,0,.8)";
+ctx.fill();
+
+p.x+=p.dx;
+p.y+=p.dy;
+
+if(p.x<0||p.x>canvas.width)p.dx*=-1;
+if(p.y<0||p.y>canvas.height)p.dy*=-1;
+
+});
+
+requestAnimationFrame(animate);
+}
+
+animate();
+
+window.addEventListener("resize",()=>{
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+});
+
+</script>
+
+</body>
+</html>
+```

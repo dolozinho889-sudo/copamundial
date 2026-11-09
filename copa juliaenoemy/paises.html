@@ -1,0 +1,203 @@
+# arquivo: paises.html (com bandeiras em imagem)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Países da Copa 2026</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{
+color:white;
+background-size:cover;
+background-position:center;
+animation:fundo 12s infinite;
+}
+@keyframes fundo{
+0%{background-image:linear-gradient(rgba(0,40,0,.6),rgba(0,0,90,.6)),url('img/imagem1.jpg');}
+33%{background-image:linear-gradient(rgba(0,40,0,.6),rgba(0,0,90,.6)),url('img/imagem2.avif');}
+66%{background-image:linear-gradient(rgba(0,40,0,.6),rgba(0,0,90,.6)),url('img/imagem3.png');}
+100%{background-image:linear-gradient(rgba(0,40,0,.6),rgba(0,0,90,.6)),url('img/imagem4.jpg');}
+}
+header{text-align:center;padding:40px 20px}
+h1{font-size:56px;text-shadow:0 0 20px yellow}
+.sub{font-size:22px;color:#ffe95e;margin-top:10px}
+.menu{text-align:center;margin-bottom:30px}
+button{
+background:linear-gradient(45deg,green,gold,blue);
+border:none;padding:18px 30px;font-size:22px;color:white;
+border-radius:25px;cursor:pointer;font-weight:bold;
+box-shadow:0 0 20px gold;transition:.4s;
+}
+button:hover{transform:scale(1.05);box-shadow:0 0 30px cyan}
+.timeline{width:88%;margin:auto;padding-bottom:50px}
+.card{
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(8px);
+border-radius:25px;
+padding:25px;
+margin:25px 0;
+box-shadow:0 0 20px rgba(255,255,0,.35);
+display:flex;
+gap:30px;
+align-items:center;
+flex-wrap:wrap;
+}
+.bandeira{
+width:160px;
+height:100px;
+object-fit:cover;
+border-radius:12px;
+box-shadow:0 0 15px gold;
+}
+.info{flex:1;min-width:280px}
+h2{color:#ffe95e;margin-bottom:15px}
+p{font-size:21px;line-height:1.8}
+.destaque{color:#7fffd4;font-weight:bold}
+@media(max-width:700px){
+.card{justify-content:center;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🌍 Países da Copa 2026</h1>
+<p class="sub">Seleções participantes, continentes, população e craques</p>
+</header>
+
+<div class="menu">
+<a href="index.html"><button>⬅ Voltar</button></a>
+</div>
+
+<div class="timeline">
+
+<div class="card">
+<img src="img/brasil.jpeg" class="bandeira">
+<div class="info">
+<h2>Brasil</h2>
+<p><span class='destaque'>Continente:</span> América do Sul<br>
+<span class='destaque'>População:</span> 203 milhões<br>
+<span class='destaque'>Jogadores:</span> Vinícius Júnior, Rodrygo, Endrick</p>
+</div></div>
+
+<div class="card">
+<img src="img/argentinabandeira.png" class="bandeira">
+<div class="info">
+<h2>Argentina</h2>
+<p>Continente: América do Sul<br>População: 46 milhões<br>Jogadores: Messi, Julián Álvarez, Enzo Fernández</p>
+</div></div>
+
+<div class="card">
+<img src="img/françabandeira.jpg" class="bandeira">
+<div class="info">
+<h2>França</h2>
+<p>Continente: Europa<br>População: 68 milhões<br>Jogadores: Mbappé, Camavinga, Dembélé</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeirainglaterra.png" class="bandeira">
+<div class="info">
+<h2>Inglaterra</h2>
+<p>Continente: Europa<br>População: 57 milhões<br>Jogadores: Bellingham, Kane, Saka</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeiraespanha.avif" class="bandeira">
+<div class="info">
+<h2>Espanha</h2>
+<p>Continente: Europa<br>População: 48 milhões<br>Jogadores: Pedri, Yamal, Rodri</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeiraalemanha.svg" class="bandeira">
+<div class="info">
+<h2>Alemanha</h2>
+<p>Continente: Europa<br>População: 84 milhões<br>Jogadores: Musiala, Wirtz, Kimmich</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeiraportugal.webp" class="bandeira">
+<div class="info">
+<h2>Portugal</h2>
+<p>Continente: Europa<br>População: 10 milhões<br>Jogadores: Cristiano Ronaldo, Bruno Fernandes, Leão</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeiraitalia.svg" class="bandeira">
+<div class="info">
+<h2>Itália</h2>
+<p>Continente: Europa<br>População: 59 milhões<br>Jogadores: Barella, Chiesa, Donnarumma</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeiraholanda.svg" class="bandeira">
+<div class="info">
+<h2>Holanda</h2>
+<p>Continente: Europa<br>População: 18 milhões<br>Jogadores: Van Dijk, Xavi Simons, Depay</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeiraeua.svg" class="bandeira">
+<div class="info">
+<h2>Estados Unidos</h2>
+<p>Continente: América do Norte<br>População: 340 milhões<br>Jogadores: Pulisic, Reyna, Weah</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeiramexico.png" class="bandeira">
+<div class="info">
+<h2>México</h2>
+<p>Continente: América do Norte<br>População: 129 milhões<br>Jogadores: Lozano, Santi Giménez, Edson Álvarez</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeiracanada.svg" class="bandeira">
+<div class="info">
+<h2>Canadá</h2>
+<p>Continente: América do Norte<br>População: 41 milhões<br>Jogadores: Alphonso Davies, Jonathan David</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeirauruguai.png" class="bandeira">
+<div class="info">
+<h2>Uruguai</h2>
+<p>Continente: América do Sul<br>População: 3 milhões<br>Jogadores: Valverde, Darwin Núñez</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeirajapao.jpg" class="bandeira">
+<div class="info">
+<h2>Japão</h2>
+<p>Continente: Ásia<br>População: 123 milhões<br>Jogadores: Mitoma, Kubo</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeiracoreia.png" class="bandeira">
+<div class="info">
+<h2>Coreia do Sul</h2>
+<p>Continente: Ásia<br>População: 51 milhões<br>Jogadores: Son, Lee Kang-in</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeiramarrocos.svg" class="bandeira">
+<div class="info">
+<h2>Marrocos</h2>
+<p>Continente: África<br>População: 37 milhões<br>Jogadores: Hakimi, Ziyech</p>
+</div></div>
+
+<div class="card">
+<img src="img/bandeirasenegel.jpg" class="bandeira">
+<div class="info">
+<h2>Senegal</h2>
+<p>Continente: África<br>População: 18 milhões<br>Jogadores: Mané, Koulibaly</p>
+</div></div>
+
+</div>
+
+</body>
+</html>
+```
+
